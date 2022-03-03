@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Reverse</title>
+</head>
+<body>
+ 
+ <h2 style="text-align: center;">Reverse The String</h2>
+ <input type="text" name="" id="reversTheName" onkeyup="reverseString()">
+ <input type="text" name="" id="showData">
+
+ <script>
+     var a = {'color': 'black', 'cost': '3000', 'brand': 'jjs'};
+     console.log(a);
+     var b = Object.keys(a);
+     console.log(b);
+     var c = b.map(function(key){
+         return{[key]: a[key]};
+     });
+     console.log(c);
+ </script>
+
+</body>
+</html>
